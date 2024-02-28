@@ -107,7 +107,7 @@ nav img{
 .nav--but button:hover {
     transform: scale(1.03);
     cursor: pointer;
-    color: #593179;
+    color: #07175c;
 }
 
 nav #menu {
@@ -120,8 +120,8 @@ nav #menu {
 }
 
 nav #menu i {
-    font-size: 20px;
-    color: #fff;
+    font-size: 22px;
+    color: #d4d2d2;
     transition: all .3s ease;
 }
 
@@ -140,7 +140,7 @@ nav #close {
 }
 
 nav #close i {
-    font-size: 48px;
+    font-size: 29px;
     color: #fff;
     transition: all .3s ease;
 }
@@ -187,7 +187,7 @@ nav.presionado .nav--link {
 }
 
 nav.presionado .nav--link .nav--links {
-    font-size: 48px;
+    font-size: 25px;
 }
 
 nav.presionado .nav--but {
@@ -201,9 +201,12 @@ nav.presionado .nav--but {
 }
 
 nav.presionado .nav--but button {
-    font-size: 48px;
+    font-size: 20px;
     padding: 16px 80px;
     border-radius: 32px;
+    position: relative;
+    right: 16px;
+    bottom: 70px;
 }
 
 header {
@@ -336,6 +339,8 @@ header .container {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
+
+
 
 @keyframes dezplazarse {
     0% {
