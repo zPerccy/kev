@@ -9,7 +9,7 @@
 
 body {
     background-color: #1d1d30;
-    background-image: url(https://api.wallpapers.ai/static/downloads/6045ecb2e95d438b8f64f1736396e9c5/upscaled/000000_180379308_kdpmpp2m15_PS7.5_Fondo_morado,azul_y_blanco_que_empieze_en_la_esquina_superior_derecha._digital_art_concept_art_[upscaled].jpg);
+    background-image: url("../images/img6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,8 +79,8 @@ nav img{
     left: 0;
     bottom: 0;
     transform-origin:bottom left;
-    background-color: #92bdd1;  
-    transition: transform .3s ease-in-out ; 
+    background-color: #92bdd1;
+    transition: transform .3s ease-in-out ;
 }
 
 .nav--link a:hover::after{
@@ -91,7 +91,6 @@ nav img{
 .nav--but {
     display: flex;
     align-items: center;
-    
 }
 
 .nav--but button {
