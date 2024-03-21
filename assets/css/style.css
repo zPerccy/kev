@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #1d1d30;
+    background-color: #000000;
     background-image: url("../images/img6.jpg");
     background-size: cover;
     background-position: center;
@@ -278,13 +278,13 @@ header .container {
 }
 
 .section {
-    padding: 40px 20vw;
+    padding: 120px 20vw;
 }
 
 .container2 {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -335,7 +335,7 @@ header .container {
     position: relative;
     right: 15px;
     animation-name: dezplazarse;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
@@ -344,18 +344,64 @@ header .container {
 
 @keyframes dezplazarse {
     0% {
-        color: #466462;
-        top: 0;
+        color: #282c2e;
+        right: 0%;
     }
 
     50% {
         color: #3a5258;
+        bottom: 50%;
     }
 
     100% {
-        color: #31383f;
-        top: 85%;
+        color: #282c2e;
+        right: 85%;
     }
+}
+
+section {
+    background-color: #000000;
+    height: 90vh;
+}
+
+.title {
+    color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.fox {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.section--two {
+    width: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    border: solid;
+    border-radius: 12px;
+    border-color: #497c91;
+}
+
+.section--two img {
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    padding: 0 20px;
+}
+
+.section--two p {
+    color: #dfdfdf;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 20px;
 }
 
 @media (max-width: 1100px) {
@@ -375,7 +421,7 @@ header .container {
     }
 
     .section {
-        padding: 0 6vw;
+        padding: 60px 6vw;
     }
 
     .container2 {
@@ -407,5 +453,27 @@ header .container {
 
     nav #menu {
         display: flex;
+    }
+
+    section {
+    height: 120vh;
+    }
+
+    .fox {
+        height: 85vh;
+        width: 80vw;
+        position: relative;
+        left: 50px;
+        bottom: 50px;
+    }
+
+    .section--two {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section--two img {
+        width: 100%;
+        height: 300px;
     }
 }
